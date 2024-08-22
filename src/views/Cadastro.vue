@@ -34,7 +34,7 @@
           </div>
           <input type="submit" value="Cadastrar">
           <input type="submit" value="Entrar">
-          <input type="submit" value="Apagar">
+          <input type="submit" value="Cadastrar">
         </form>
       </div>
     </div>
@@ -48,8 +48,8 @@
     align-items: center;
 }
 .form {
-  margin: 0px 60px;
-  padding: 30px 60px;
+  margin: 0px 60px 0px 0px;
+  padding: 30px 60px 30px 60px;
 }
 .p {
   margin: 30px;
@@ -72,7 +72,7 @@ h2{
     font-size: large;
 }
 .titulo{
-    margin: 30px 300px 0px 300px;
+    margin: 150px 300px 0px 200px;
     padding: 10px;
 }
 </style>
