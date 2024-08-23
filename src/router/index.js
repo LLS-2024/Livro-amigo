@@ -21,7 +21,14 @@ const router = createRouter({
       name: 'relatorio',
       
       component: () => import('../views/RelatorioLivro.vue')
+    },
+    {
+      path: '/terror',
+      name: 'terror',
+      
+      component: () => import('../views/PagTerror.vue')
     }
+  
   ]
 })
 
