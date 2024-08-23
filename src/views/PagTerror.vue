@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <header class="container1">
+    <header class="bg-secondary container1 ">
         <h3> <span style='font-size:60px;'>&#128214;</span>terror</h3>
        
    
@@ -21,14 +21,22 @@
  </header>
  <header class="conteiner3">
     <div> 
-    <img src="../assets/terror.webp">
-    <img src="../assets/t1.jpg">
-    <img src="../assets/terror.webp" alt="">
+    <img src="../assets/t2.webp" class="img1">
+    <img src="../assets/t3.webp" class="img1">
+    <img src="../assets/t4.webp" class="img1">
 
 </div>
-
+<hr>
  </header>
- 
+ <header class="conteiner4">
+    <div> 
+    <img src="../assets/livrot.jpg" >
+    <img src="../assets/t5.webp" class="img2" >
+
+
+</div>
+<hr>
+ </header> 
 
 
 </template>
@@ -37,7 +45,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
  .container1{
-            background-color: rgb(58, 58, 58);
             display: flex;  
   flex-direction: column;
   align-items: center;
@@ -53,11 +60,24 @@
             grid-template-columns: 1fr 1fr 1fr;
         
         }
+        .container4{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+        
+        }
   
 img{
     margin: 90px;
     width: 500px;
     height: 300px;
+}
+.img1{
+    width: 300px;
+    height: 300px;
+}
+.img2{
+    width: 400px;
+    height: 400px;
 }
 h3{
  color: aliceblue; 
