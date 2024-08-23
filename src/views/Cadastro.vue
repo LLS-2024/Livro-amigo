@@ -32,7 +32,7 @@
             <input type="radio" name="Pai" id="filho">
             <label for="filho">Filho</label>
           </div>
-          <input type="submit" value="Cadastrar">
+          <input type="submit" value="Limpar">
           <input type="submit" value="Entrar">
           <input type="submit" value="Cadastrar">
         </form>
