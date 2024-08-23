@@ -1,19 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/Cadastro.vue'
+import Cadastro from '../views/Cadastro.vue'
+import PaginaInicialView from '@/views/PaginaInicialView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'paginainicial',
+      component: PaginaInicialView
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/cadastro',
+      name: 'cadastro',
+      component: Cadastro
       
-      component: () => import('../views/AboutView.vue')
     },
     {
       path: '/relatorio',
