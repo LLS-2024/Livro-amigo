@@ -24,10 +24,31 @@ const router = createRouter({
       component: () => import('../views/RelatorioLivro.vue')
     },
     {
+
       path: '/paginaaventura',
       name: 'paginaaventura',
       component: PaginaAventura
+    },
+      {
+      path: '/terror',
+      name: 'terror',
+      
+      component: () => import('../views/PagTerror.vue')
+    },
+    {
+      path: '/fantasia',
+      name: 'fantasia',
+      
+      component: () => import('../views/PagFantasia.vue')
+    },
+    {
+      path: '/suspense',
+      name: 'suspense',
+      
+      component: () => import('../views/PagSuspense.vue')
+
     }
+  
   ]
 })
 
