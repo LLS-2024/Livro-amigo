@@ -2,11 +2,13 @@
 <script setup>
 </script>
 
+
 <template>
   <div class="caixa d-flex p-2 justify-content-center align-itens-center flex-row flex-wrap">
     <div class="p-2">
       <img src="../assets/foto-Cadastro.avif" alt="" />
     </div>
+
 
     <div class="Formulario p-2 justify-content-center flex-row flex-wrap">
       <div  class="titulo bg-dark text-white">
@@ -63,8 +65,8 @@ img {
   height: max-content;
 }
 input{
- margin: 10px; 
-  
+ margin: 10px;
+ 
 }
 h1{
     font-size:x-large;
