@@ -33,6 +33,12 @@ const router = createRouter({
       name: 'fantasia',
       
       component: () => import('../views/PagFantasia.vue')
+    },
+    {
+      path: '/suspense',
+      name: 'suspense',
+      
+      component: () => import('../views/PagSuspense.vue')
     }
   
   ]
