@@ -35,6 +35,7 @@
           <input type="submit" value="Limpar">
           <input type="submit" value="Entrar">
           <input type="submit" value="Cadastrar">
+          <RouterLink class="cad" to="/cadlivros">Cadastro de Livros</RouterLink>
         </form>
       </div>
     </div>
@@ -74,5 +75,11 @@ h2{
 .titulo{
     margin: 150px 300px 0px 200px;
     padding: 10px;
+}
+.cad{
+  background-color: rgb(204, 204, 204);
+  color: black;
+  padding: 5px;
+ 
 }
 </style>
