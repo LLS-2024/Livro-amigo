@@ -27,6 +27,12 @@ const router = createRouter({
       name: 'terror',
       
       component: () => import('../views/PagTerror.vue')
+    },
+    {
+      path: '/fantasia',
+      name: 'fantasia',
+      
+      component: () => import('../views/PagFantasia.vue')
     }
   
   ]
