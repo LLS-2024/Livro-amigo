@@ -8,7 +8,7 @@
             <li><RouterLink to="/cadastro">Cadastro</RouterLink></li>
             <li><RouterLink to="/relatorio">Relatorio</RouterLink></li>
             <li> <RouterLink to="/romance">Romance</RouterLink></li>
-           <li> <RouterLink to="/projetoequipe">Aventura</RouterLink></li>
+           <li> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
            <li><RouterLink to="/paginamembros">Fantasia</RouterLink></li>
            <li><RouterLink to="/paginamembros">Terror</RouterLink></li>
            <li><RouterLink to="/paginamembros">Suspense</RouterLink></li>
