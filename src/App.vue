@@ -8,6 +8,7 @@ import FooterGeral from '@/components/FooterGeral.vue'
  <router-link to="/Relatorio">Relatorio</router-link>
  <router-link to="/terror">terror</router-link>
  <router-link to="/fantasia">fantasia</router-link>
+ <router-link to="/suspense">suspense</router-link>
  <footer-geral />
 </template>
 
