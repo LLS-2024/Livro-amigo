@@ -25,12 +25,19 @@ const router = createRouter({
       component: () => import('../views/RelatorioLivro.vue')
     },
     {
+      path: '/PagInfantil',
+      name: 'PagInfantil',
+      
+      component: () => import('../views/PagInfantil.vue')
+    },
+    {
 
       path: '/paginaaventura',
       name: 'paginaaventura',
       component: PaginaAventura
     },
       {
+
       path: '/terror',
       name: 'terror',
       
