@@ -23,6 +23,12 @@ const router = createRouter({
       component: () => import('../views/RelatorioLivro.vue')
     },
     {
+      path: '/PagInfantil',
+      name: 'PagInfantil',
+      
+      component: () => import('../views/PagInfantil.vue')
+    },
+    {
       path: '/terror',
       name: 'terror',
       

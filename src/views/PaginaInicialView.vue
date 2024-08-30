@@ -12,6 +12,7 @@
            <li><RouterLink to="/paginamembros">Fantasia</RouterLink></li>
            <li><RouterLink to="/paginamembros">Terror</RouterLink></li>
            <li><RouterLink to="/paginamembros">Suspense</RouterLink></li>
+           <li><RouterLink to="/pagInfantil">infantil</RouterLink></li>
           </ul>
         </div>
       </div>
