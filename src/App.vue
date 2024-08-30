@@ -5,8 +5,6 @@ import FooterGeral from '@/components/FooterGeral.vue'
 <template>
 
  <RouterView />
-
-
  <footer-geral />
 </template>
 
