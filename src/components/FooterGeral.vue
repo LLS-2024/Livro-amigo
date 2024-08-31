@@ -34,6 +34,7 @@
           <li><RouterLink to="/terror">Terror</RouterLink></li>
           <li><RouterLink to="/suspense">Suspense</RouterLink></li>
           <li> <router-link to="/PagInfantil">Infantil</Router-link></li>
+            <li><RouterLink to="/LivroResumo">Resumo do livro</RouterLink></li>
         </ul>
       </div>
       <div class="desenvolvedores">
