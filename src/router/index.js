@@ -1,22 +1,74 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Cadastro from '../views/Cadastro.vue'
+import PaginaInicialView from '@/views/PaginaInicialView.vue'
+import PaginaAventura from '@/views/PaginaAventura.vue'
+import CadLivrosView from '@/views/CadLivrosView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'paginainicial',
+      component: PaginaInicialView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/cadastro',
+      name: 'cadastro',
+      component: Cadastro
+      
+    },
+    
+    {
+      path: '/relatorio',
+      name: 'relatorio',
+      
+      component: () => import('../views/RelatorioLivro.vue')
+    },
+    {
+      path: '/LivroResumo',
+      name: 'LivroResumo',
+      
+      component: () => import('../views/LivroResumo.vue')
+    },
+    {
+      path: '/PagInfantil',
+      name: 'PagInfantil',
+      
+      component: () => import('../views/PagInfantil.vue')
+    },
+    {
+
+      path: '/paginaaventura',
+      name: 'paginaaventura',
+      component: PaginaAventura
+    },
+      {
+
+      path: '/terror',
+      name: 'terror',
+      
+      component: () => import('../views/PagTerror.vue')
+    },
+    {
+      path: '/fantasia',
+      name: 'fantasia',
+      
+      component: () => import('../views/PagFantasia.vue')
+    },
+    {
+      path: '/suspense',
+      name: 'suspense',
+      
+      component: () => import('../views/PagSuspense.vue')
+
+    },
+    {
+path: '/CadLivros',
+name: 'CadLivros',
+component: CadLivrosView
     }
+  
   ]
 })
 
