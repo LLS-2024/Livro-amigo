@@ -20,7 +20,7 @@
     <div class="relatorio">
         <h2 class="one">Descrição</h2>
         <br>
-        <div> <p>a luiza ama muito a leila e a sarahhhhh e essa seria a descrição e
+        <div> <p> essa seria a descrição e
           epois de anos sendo escravizados pelas fadas, os humanos conseguiram se libertar e coexistem com os seres místicos. Cerca de cinco séculos após a guerra que definiu o futuro das espécies, Feyre, filha de um casal de mercadores, é forçada a se tornar uma caçadora para ajudar a família. Após matar um féerico transformada em lobo, uma criatura bestial surge exigindo uma reparação.
 
 Arrastada para uma terra mágica e traiçoeira 

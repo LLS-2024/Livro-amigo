@@ -3,17 +3,17 @@
       <div class="nav d-flex flex-column flex-wrap bg-secondary text-white ">
         <h1>Livro Amigo</h1>
         <hr>
-        <div class="link d-flex flex-wrap flex-column">
-          <ul class="d-flex flex-row justify-content-around">
-            <li><RouterLink to="/cadastro">Cadastro</RouterLink></li>
-            <li><RouterLink to="/relatorio">Relatorio</RouterLink></li>
-            <li> <RouterLink to="/romance">Romance</RouterLink></li>
-           <li> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
-           <li><RouterLink to="/paginamembros">Fantasia</RouterLink></li>
-           <li><RouterLink to="/paginamembros">Terror</RouterLink></li>
-           <li><RouterLink to="/paginamembros">Suspense</RouterLink></li>
-           <li><RouterLink to="/pagInfantil">infantil</RouterLink></li>
-           <li><RouterLink to="/LivroResumo">Resumo do livro</RouterLink></li>
+        <div class="link d-flex  flex-wrap flex-column">
+          <ul class="link3 d-flex flex-row flex-wrap justify-content-around">
+            <li class="a"><RouterLink to="/cadastro">Cadastro</RouterLink></li>
+            <li class="a"><RouterLink to="/relatorio">Relatorio</RouterLink></li>
+            <li class="a"> <RouterLink to="/romance">Romance</RouterLink></li>
+           <li class="a"> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
+           <li class="a"><RouterLink to="/paginamembros">Fantasia</RouterLink></li>
+           <li class="a"><RouterLink to="/paginamembros">Terror</RouterLink></li>
+           <li class="a"><RouterLink to="/paginamembros">Suspense</RouterLink></li>
+           <li class="a"><RouterLink to="/pagInfantil">infantil</RouterLink></li>
+           <li class="a"><RouterLink to="/LivroResumo">Resumo do livro</RouterLink></li>
           </ul>
         </div>
       </div>
@@ -31,6 +31,9 @@
   margin: 0px 200px;
   padding: 100px;
 }
+.link3 li{
+  margin: 14px;
+}
 .link{
   text-align: center;
   margin: 20px;
@@ -38,5 +41,13 @@
 }
 hr{
   border: solid 2px black;
+}
+.a:hover, .a:active {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    }
+.a{
+    transition-property: font-size;
+    transition-duration: 1s;
 }
 </style>
