@@ -18,7 +18,7 @@
    <main class="main d-flex flex-column flex-wrap ">
 <div class="caixa d-flex flex-row flex-wrap bg-secondary">
 <div>
-<RouterLink class="img" to="/"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img" to="/LivroResumo"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
 <RouterLink class="img" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
 <RouterLink class="img" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
 <RouterLink class="img" to="/"><img src="../assets/img-aventura-4.jfif" alt=""></RouterLink>
