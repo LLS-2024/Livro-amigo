@@ -18,11 +18,18 @@ const router = createRouter({
       component: Cadastro
       
     },
+    
     {
       path: '/relatorio',
       name: 'relatorio',
       
       component: () => import('../views/RelatorioLivro.vue')
+    },
+    {
+      path: '/LivroResumo',
+      name: 'LivroResumo',
+      
+      component: () => import('../views/LivroResumo.vue')
     },
     {
       path: '/PagInfantil',
