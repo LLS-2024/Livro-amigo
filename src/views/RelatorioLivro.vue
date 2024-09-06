@@ -26,7 +26,7 @@
           required
         />
         </form>
-
+        <input type="button" onclick="alert('Cadastrado com sucesso!')" value="Clique aqui para prosseguir!">
     </div>
 </main>
 
