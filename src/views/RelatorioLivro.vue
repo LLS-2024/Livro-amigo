@@ -1,20 +1,9 @@
 <script setup>
+import HeaderCompo from '@/components/HeaderCompo.vue';
+
 </script>
 <template>
-
-<header class="bg-secondary container1 ">
-        <h3> <span style='font-size:70px;'>&#128209;</span>relatorio de livros</h3>
-       
-   
-    </header>
- <nav>
-          <div><p>terror</p></div> 
-          <div><p>romance</p></div>
-          <div><p>aventura</p></div> 
-          <div><p>comedia</p></div>
-          <div><p>suspense</p></div> 
-          <div><p>fantasia</p></div>
-        </nav>
+  <HeaderCompo title="Relatório dos livros"/>
 
 <main>
     <div class="relatorio">

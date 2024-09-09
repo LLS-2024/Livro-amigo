@@ -1,25 +1,14 @@
 <script setup>
+import HeaderCompo from '@/components/HeaderCompo.vue';
 
 </script>
 <template>
-    <header class="bg-secondary container1 ">
-        <h3> <span style='font-size:60px;'>&#128214;</span>terror</h3>
-       
-   
-    </header>
- <nav>
-          <div><p>terror</p></div> 
-          <div><p>romance</p></div>
-          <div><p>aventura</p></div> 
-          <div><p>comedia</p></div>
-          <div><p>suspense</p></div> 
-          <div><p>fantasia</p></div>
-        </nav>
- <header class="conteiner2">
+  <HeaderCompo title="Terror"/>
+ <div class="conteiner2">
     <div> <img src="../assets/terror.webp">
     <img src="../assets/t1.jpg" alt=""> </div>
- </header>
- <header class="conteiner3">
+ </div>
+ <div class="conteiner3">
     <div> 
     <img src="../assets/t2.webp" class="img1">
     <img src="../assets/t3.webp" class="img1">
@@ -27,8 +16,8 @@
 
 </div>
 <hr>
- </header>
- <header class="conteiner4">
+ </div>
+ <div class="conteiner4">
     <div> 
     <img src="../assets/livrot.jpg" >
     <img src="../assets/t5.webp" class="img2" >
@@ -36,7 +25,7 @@
 
 </div>
 <hr>
- </header> 
+</div> 
 
 
 </template>
