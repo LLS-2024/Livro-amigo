@@ -1,13 +1,39 @@
+<script setup>
+import HeaderCompo from '@/components/HeaderCompo.vue';
+import { reactive } from 'vue'
+const emit = defineEmits(['salvar'])
+const dados = reactive({
+  Edição: '',
+  Genero: '',
+  Codigo: '',
+  avatar: '',
+  FaixaEtaria: []
+})
+function salvarLivro() {
+    emit('salvar', { ...dados })
+  
+}
+function handleFileUpload(e) {
+  const target = e.target
+  console.log(target)
+  if (target && target.files) {
+    const file = target.files[0]
+    dados.value.avatar = URL.createObjectURL(file)
+  }
+}
+
+</script>
 <template>
+  <HeaderCompo title="Cadastro Livro"/>
   <div class="d-flex flex-row flex-wrap justify-content-center">
     <div class="p-2"><img src="/src/assets/foto-Cadastro.avif" alt="" /></div>
-    <div>
-      <div class="Formulario p-2 justify-content-center flex-row flex-wrap">
+    <div class="d-flex flex-column justify-content-center flex-row flex-wrap align-items-center">
+      <div class="Formulario p-2 ">
         <div class="titulo bg-dark text-white">
           <h1>Cadastro</h1>
         </div>
         <div class="form bg-secondary text-white">
-          <form>
+          <form @submit.prevent="salvarLivro">
             <div>
               <h2>Faixa etaria</h2>
               <div class="campo">
@@ -46,12 +72,19 @@
             </div>
             <div>
                 <div><label for="Codigo">Código:</label></div>
-              
               <input type="text" id="Codigo" />
             </div>
+            <div class="">
+            <label for="avatarField">Capa Livro</label>
+            <input
+              type="file"
+              class="form-control"
+              id="avatarField"
+              @change="handleFileUpload($event)"
+            />
+            </div>
 
-            <input type="submit" value="Limpar" />
-            <input type="submit" value="Entrar" />
+            <input type="submit" value="Limpar" class="" />
             <input type="submit" value="Cadastrar" />
           </form>
         </div>
@@ -94,7 +127,7 @@ h2 {
   font-size: large;
 }
 .titulo {
-  margin: 100px 300px 0px 200px;
+  margin: 0px 300px 0px 200px;
   padding: 10px;
 }
 </style>

@@ -1,25 +1,14 @@
 <script setup>
+import HeaderCompo from '@/components/HeaderCompo.vue';
 
 </script>
 <template>
-    <header class="bg-secondary container1 ">
-        <h3> <span style='font-size:60px;'>&#128214;</span>fantasia</h3>
-       
-   
-    </header>
- <nav>
-          <div><p>terror</p></div> 
-          <div><p>romance</p></div>
-          <div><p>aventura</p></div> 
-          <div><p>comedia</p></div>
-          <div><p>suspense</p></div> 
-          <div><p>fantasia</p></div>
-        </nav>
- <header class="conteiner2">
+  <HeaderCompo title="Fantasia"/>
+ <div class="conteiner2">
     <div> <img src="../assets/volumes-unicos.webp">
     <img src="../assets/fantasia-ilustracao.jpg" alt=""> </div>
- </header>
- <header class="conteiner3">
+ </div>
+ <div class="conteiner3">
     <div> 
     <img src="../assets/em.jpg" class="img1">
     <img src="../assets/ar.jpg" class="img1">
@@ -28,7 +17,7 @@
 
 </div>
 <hr>
- </header>
+ </div>
 
 
 
