@@ -1,19 +1,9 @@
-<template><header class="d-flex flex-column flex-wrap">
-    <div class="txt d-flex flex-row justify-content-center bg-secondary flex-wrap">
-        <h3> <span style='font-size:60px;'>&#128214;</span>Aventura</h3>
-    </div>
-    <nav>
-        <ul class=" d-flex bg-dark text-white flex-row justify-content-around">
-            <li><RouterLink to="/cadastro">Cadastro</RouterLink></li>
-            <li><RouterLink to="/relatorio">Relatorio</RouterLink></li>
-            <li> <RouterLink to="/romance">Romance</RouterLink></li>
-           <li> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
-           <li><RouterLink to="/paginamembros">Fantasia</RouterLink></li>
-           <li><RouterLink to="/paginamembros">Terror</RouterLink></li>
-           <li><RouterLink to="/paginamembros">Suspense</RouterLink></li>
-          </ul>
-    </nav>
-   </header>
+<script setup>
+import HeaderCompo from '@/components/HeaderCompo.vue';
+
+</script>
+<template>
+  <HeaderCompo title="Terror"/>
    <main class="main d-flex flex-column flex-wrap ">
  <div class="caixa d-flex flex-row flex-wrap bg-secondary">
  <div>
@@ -111,6 +101,9 @@
  }
  .img5 img{
     width: 200px;
+
+
+
     height: 300px;
  }
  </style>

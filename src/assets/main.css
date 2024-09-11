@@ -1,0 +1,12 @@
+@import '@mdi/font/css/materialdesignicons.css';
+@import './base.css';
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit; 
+}
