@@ -3,22 +3,33 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 
 </script>
 <template>
-  <HeaderCompo title="Fantasia"/>
+  <HeaderCompo title="Página Infantil"/>
  <div class="conteiner2">
-    <div> <img src="../assets/volumes-unicos.webp">
-    <img src="../assets/fantasia-ilustracao.jpg" alt=""> </div>
+    
+    <div> <img src="../assets/i3.jpg" class="img3">
+    <img src="../assets/i4.jpg" class="img2"> </div>
  </div>
  <div class="conteiner3">
     <div> 
-    <img src="../assets/em.jpg" class="img1">
-    <img src="../assets/ar.jpg" class="img1">
-    <img src="../assets/nf.jpg" class="img1">
-    <img src="../assets/fp.jpg" class="img1">
+    <img src="../assets/i2.jpg" class="img1">
+    <img src="../assets/i1.jpg" class="img1">
+    <img src="../assets/i5.jpg" class="img1">
+    <img src="../assets/i6.jpg" class="img1">
+    <img src="../assets/i7.jpg" class="img1">
+    <img src="../assets/i8.jpg" class="img1">
+    <img src="../assets/i9.jpg" class="img1">
 
 </div>
-<hr>
  </div>
+ <div class="conteiner4">
+    <div> 
+    <img src="../assets/i10.jpg" >
+    <img src="../assets/i11.jpg" class="img4" >
 
+
+</div>
+
+</div> 
 
 
 </template>
@@ -30,6 +41,7 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
             display: flex;  
   flex-direction: column;
   align-items: center;
+ 
         }
         .container2{
             display: grid;
@@ -47,19 +59,29 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
             grid-template-columns: 1fr 1fr ;
         
         }
-  
+
 img{
     margin: 90px;
-    width: 500px;
+    width: 400px;
     height: 300px;
 }
 .img1{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 180px;
+    margin: 12px;
+    border: solid 1px black;
 }
 .img2{
     width: 400px;
     height: 400px;
+ 
+
+}
+.img4{
+    width: 500px;
+    height: 300px;
+    border: solid 3px black;
+
 }
 h3{
  color: aliceblue; 

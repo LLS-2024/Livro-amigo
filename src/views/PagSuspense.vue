@@ -34,7 +34,6 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 </div>
 </div>
 
-
     <div class="caixa3 d-flex flex-row flex-wrap bg-secondary justify-content-around">
     <div class="caixa2 d-flex flex-row flex-wrap">
 <RouterLink class="img3" to="/"><img src="../assets/box.png" alt=""></RouterLink>
@@ -54,8 +53,7 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 <div class="img2">
     <img src="/src/assets/jardim.png" alt="">
 </div>
-</div>
-    
+</div>    
    </main>
 </template>
 <style scoped>

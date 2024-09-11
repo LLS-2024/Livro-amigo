@@ -3,7 +3,10 @@
 </script>
 
 <template>
-  <div class="caixa d-flex p-2 justify-content-center align-itens-center flex-row flex-wrap">
+  <div class="">
+    <RouterLink to="/"></RouterLink>
+  </div>
+  <div class="caixa d-flex p-2 justify-content-center align-items-center flex-row flex-wrap">
     <div class="p-2">
       <img src="../assets/foto-Cadastro.avif" alt="" />
     </div>
@@ -32,10 +35,13 @@
             <input type="radio" name="Pai" id="filho">
             <label for="filho">Filho</label>
           </div>
-          <input type="submit" value="Limpar">
-          <input type="submit" value="Entrar">
-          <input type="submit" value="Cadastrar">
+          <div class="mt-5">
+            <button class="botão">Cadastrar</button>
+          <button class="botão">Limpar</button>
+          </div>
+          
         </form>
+        <div class=""></div>
       </div>
     </div>
   </div>
@@ -46,6 +52,33 @@
 }
 .Formulario{
     align-items: center;
+}
+.cadd{
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+.botão{
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px ;
+  transition: 0.7s;
+}
+.botão:hover{
+  background-color: black;
+  color: white;
+  
+}
+.cadastro{
+font-size: 0.8rem;
+transition: 1s;
+
+}
+.cadastro:hover{
+  font-size: 0.9rem;
+  text-decoration: underline;
 }
 .form {
   margin: 0px 60px 0px 0px;
@@ -72,7 +105,8 @@ h2{
     font-size: large;
 }
 .titulo{
-    margin: 150px 300px 0px 200px;
+    margin: 0px 300px 0px 200px;
     padding: 10px;
 }
+
 </style>

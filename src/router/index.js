@@ -1,21 +1,44 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Cadastro from '../views/Cadastro.vue'
 import PaginaInicialView from '@/views/PaginaInicialView.vue'
+import PaginaAventura from '@/views/PaginaAventura.vue'
+import CadLivrosView from '@/views/CadLivrosView.vue'
+import LoginView from '@/views/LoginView.vue'
+import LogingerenteView from '@/views/LogingerenteView.vue'
+import PaginaGerenteView from '@/views/PaginaGerenteView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'paginainicial',
-      component: PaginaInicialView
+      name: 'login',
+      component: LoginView
+    },
+    {
+      path: '/logingerente',
+      name: 'logingerente',
+      component: LogingerenteView
     },
     {
       path: '/cadastro',
       name: 'cadastro',
       component: Cadastro
+    },
+    {
+      path: '/paginainicial',
+      name: 'paginainicial',
+      component: PaginaInicialView
       
     },
+    {
+      path: '/paginagerenciamento',
+      name: 'paginagerente',
+      component: PaginaGerenteView
+      
+    },
+    
     {
       path: '/relatorio',
       name: 'relatorio',
@@ -23,6 +46,25 @@ const router = createRouter({
       component: () => import('../views/RelatorioLivro.vue')
     },
     {
+      path: '/LivroResumo',
+      name: 'LivroResumo',
+      
+      component: () => import('../views/LivroResumo.vue')
+    },
+    {
+      path: '/PagInfantil',
+      name: 'PagInfantil',
+      
+      component: () => import('../views/PagInfantil.vue')
+    },
+    {
+
+      path: '/paginaaventura',
+      name: 'paginaaventura',
+      component: PaginaAventura
+    },
+      {
+
       path: '/terror',
       name: 'terror',
       
@@ -39,6 +81,12 @@ const router = createRouter({
       name: 'suspense',
       
       component: () => import('../views/PagSuspense.vue')
+
+    },
+    {
+path: '/CadLivros',
+name: 'CadLivros',
+component: CadLivrosView
     }
   
   ]
