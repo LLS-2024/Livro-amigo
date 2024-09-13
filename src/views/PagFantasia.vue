@@ -39,7 +39,6 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 <RouterLink class="img3" to="/"><img src="../assets/image 45.png" alt=""></RouterLink>
 </div>
 </div>
-
    </main>
 </template>
 <style scoped>
