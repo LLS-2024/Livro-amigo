@@ -3,19 +3,39 @@ import Cadastro from '../views/Cadastro.vue'
 import PaginaInicialView from '@/views/PaginaInicialView.vue'
 import PaginaAventura from '@/views/PaginaAventura.vue'
 import CadLivrosView from '@/views/CadLivrosView.vue'
+import LoginView from '@/views/LoginView.vue'
+import LogingerenteView from '@/views/LogingerenteView.vue'
+import PaginaGerenteView from '@/views/PaginaGerenteView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'paginainicial',
-      component: PaginaInicialView
+      name: 'login',
+      component: LoginView
+    },
+    {
+      path: '/logingerente',
+      name: 'logingerente',
+      component: LogingerenteView
     },
     {
       path: '/cadastro',
       name: 'cadastro',
       component: Cadastro
+    },
+    {
+      path: '/paginainicial',
+      name: 'paginainicial',
+      component: PaginaInicialView
+      
+    },
+    {
+      path: '/paginagerenciamento',
+      name: 'paginagerente',
+      component: PaginaGerenteView
       
     },
     

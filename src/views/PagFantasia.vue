@@ -1,87 +1,94 @@
 <script setup>
-
+import HeaderCompo from '@/components/HeaderCompo.vue';
 </script>
 <template>
-    <header class="bg-secondary container1 ">
-        <h3> <span style='font-size:60px;'>&#128214;</span>fantasia</h3>
-       
-   
-    </header>
- <nav>
-          <div><p>terror</p></div> 
-          <div><p>romance</p></div>
-          <div><p>aventura</p></div> 
-          <div><p>comedia</p></div>
-          <div><p>suspense</p></div> 
-          <div><p>fantasia</p></div>
-        </nav>
- <header class="conteiner2">
-    <div> <img src="../assets/volumes-unicos.webp">
-    <img src="../assets/fantasia-ilustracao.jpg" alt=""> </div>
- </header>
- <header class="conteiner3">
-    <div> 
-    <img src="../assets/em.jpg" class="img1">
-    <img src="../assets/ar.jpg" class="img1">
-    <img src="../assets/nf.jpg" class="img1">
-    <img src="../assets/fp.jpg" class="img1">
-
+  <HeaderCompo title="Fantasia"/>
+   <main class="main d-flex flex-column flex-wrap ">
+<div class="caixa d-flex flex-row flex-wrap bg-secondary">
+<div>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-4.jfif" alt=""></RouterLink>
 </div>
-<hr>
- </header>
+</div>
+<p></p>
+<div class="d-flex flex-column flex-wrap justify-content-around">
+<div class="d-flex flex-wrap flex-row">
+    <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+</div>
+    <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+    <div class=" d-flex flex-row flex-wrap bg-secondary">
+<RouterLink class="img3" to="/"><img src="/src/assets/aventura1 - Copia.jpg" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="/src/assets/aventura-2 - Copia.jpg" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="/src/assets/aventura-3 - Copia.jpg" alt=""></RouterLink>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+    <div class="caixa3 d-flex flex-row flex-wrap bg-secondary justify-content-around">
+    <div class="caixa2 d-flex flex-row flex-wrap">
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+</div>
+</div>
 
-
-
+   </main>
 </template>
 <style scoped>
- @charset "utf-8";
- @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-
- .container1{
-            display: flex;  
-  flex-direction: column;
-  align-items: center;
-        }
-        .container2{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: rgb(87, 86, 86);
-        padding: 50px;
-        }
-        .container3{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        
-        }
-        .container4{
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
-        
-        }
-  
-img{
-    margin: 90px;
-    width: 500px;
-    height: 300px;
+li{
+    padding: 20px;
 }
-.img1{
-    width: 200px;
-    height: 200px;
+.main{
+    align-items: center;
 }
-.img2{
-    width: 400px;
-    height: 400px;
+.caixa{
+    margin: 10px;
+    padding: 30px 100px;
+}
+.caixa2{
+    margin: 8px 30px 15px 30px;
+    padding: 20px 50px; 
+    align-items: center;
 }
 h3{
- color: aliceblue; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    font-family: 'Titan One', sans-serif;
+.img{
+    margin: 10px;
 }
-
-
+img{
+    width:145px;
+    height: 200px;
+    transition: 1s;
+}
+.img3 img:hover{
+    width:175px;
+    height: 230px;
+}
+.caixa3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.caixa4{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 30px 70px;
+  
+}
+.img2{
+    margin: 0px 10px 0px 200px;
+}
 </style>
