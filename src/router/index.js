@@ -4,7 +4,6 @@ import PaginaInicialView from '@/views/PaginaInicialView.vue'
 import PaginaAventura from '@/views/PaginaAventura.vue'
 import CadLivrosView from '@/views/CadLivrosView.vue'
 import LoginView from '@/views/LoginView.vue'
-import LogingerenteView from '@/views/LogingerenteView.vue'
 import PaginaGerenteView from '@/views/PaginaGerenteView.vue'
 
 
@@ -16,11 +15,7 @@ const router = createRouter({
       name: 'login',
       component: LoginView
     },
-    {
-      path: '/logingerente',
-      name: 'logingerente',
-      component: LogingerenteView
-    },
+  
     {
       path: '/cadastro',
       name: 'cadastro',
