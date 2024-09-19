@@ -19,13 +19,13 @@
     </div>
     <slot> <nav>
         <ul class=" d-flex bg-dark text-white flex-row justify-content-around">
-            <li><RouterLink to="/cadastro">Cadastro</RouterLink></li>
-            <li><RouterLink to="/relatorio">Relatorio</RouterLink></li>
-            <li> <RouterLink to="/PagInfantil">Página Infantil</RouterLink></li>
-           <li> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
-           <li><RouterLink to="/fantasia">Fantasia</RouterLink></li>
-           <li><RouterLink to="/terror">Terror</RouterLink></li>
-           <li><RouterLink to="/suspense">Suspense</RouterLink></li>
+            <li class="a"><RouterLink to="/cadastro">Cadastro</RouterLink></li>
+            <li class="a"><RouterLink to="/relatorio">Relatorio</RouterLink></li>
+            <li class="a"> <RouterLink to="/PagInfantil">Página Infantil</RouterLink></li>
+           <li class="a"> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
+           <li class="a"><RouterLink to="/fantasia">Fantasia</RouterLink></li>
+           <li class="a"><RouterLink to="/terror">Terror</RouterLink></li>
+           <li class="a"><RouterLink to="/suspense">Suspense</RouterLink></li>
           </ul>
     </nav></slot>
      
@@ -53,4 +53,12 @@
      height: 100px;
      width: 100px;
  }
+ .a:hover, .a:active {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    }
+.a{
+    transition-property: font-size;
+    transition-duration: 1s;
+}
  </style>
