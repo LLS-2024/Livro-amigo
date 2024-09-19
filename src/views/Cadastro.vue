@@ -1,51 +1,67 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+import { ref } from 'vue';
+
+const nomeCompleto = ref('');
+const cpf = ref('');
+const telefone = ref('');
+const classificacao = ref('');
+
+const handleCadastro = () => {
+  alert('Cadastro concluído!');
+  handleLimpar(); 
+}
+
+const handleLimpar = () => {
+  nomeCompleto.value = '';
+  cpf.value = '';
+  telefone.value = '';
+  classificacao.value = '';
+}
 </script>
 
 <template>
-  <div class="">
-    <RouterLink to="/"></RouterLink>
-  </div>
   <div class="caixa d-flex p-2 justify-content-center align-items-center flex-row flex-wrap">
     <div class="p-2">
       <img src="../assets/foto-Cadastro.avif" alt="" />
     </div>
 
     <div class="Formulario p-2 justify-content-center flex-row flex-wrap">
-      <div  class="titulo bg-dark text-white">
-      <h1 >Cadastro</h1></div>
+      <div class="titulo bg-dark text-white">
+        <h1>Cadastro</h1>
+      </div>
       <div class="form bg-secondary text-white">
-        <form >
+        <form @submit.prevent="handleCadastro">
           <div>
             <label for="NomeCompleto">Insira seu nome completo:</label>
-            <input type="text" id="NomeCompleto" placeholder="Insira seu nome..." required/>
+            <input v-model="nomeCompleto" type="text" id="NomeCompleto" placeholder="Insira seu nome..." required />
           </div>
           <div>
             <label for="CPF">Insira seu CPF:</label>
-            <input type="text" id="CPF" placeholder="123.456.789-10" required>
+            <input v-model="cpf" type="text" id="CPF" placeholder="123.456.789-10" required>
           </div>
           <div>
             <label for="tel">Insira seu telefone:</label>
-            <input type="text" id="tel" placeholder="(47) 99999-9999">
+            <input v-model="telefone" type="text" id="tel" placeholder="(47) 99999-9999">
           </div>
           <div>
             <h2>Classificações</h2>
-            <input type="radio" name="Pai" id="pai">
+            <input v-model="classificacao" type="radio" name="Pai" id="pai" value="Pai">
             <label for="pai">Pai</label>
-            <input type="radio" name="Pai" id="filho">
+            <input v-model="classificacao" type="radio" name="Pai" id="filho" value="Filho">
             <label for="filho">Filho</label>
           </div>
           <div class="mt-5">
-            <button class="botão">Cadastrar</button>
-          <button class="botão">Limpar</button>
+            <button type="submit" class="botão">Cadastrar</button>
+            <button type="button" @click="handleLimpar" class="botão">Limpar</button>
           </div>
-          
         </form>
-        <div class=""></div>
       </div>
     </div>
   </div>
 </template>
+
+
 <style scoped>
 .caixa {
   padding: 50px;

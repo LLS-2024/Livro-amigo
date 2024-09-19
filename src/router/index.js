@@ -5,6 +5,7 @@ import PaginaAventura from '@/views/PaginaAventura.vue'
 import CadLivrosView from '@/views/CadLivrosView.vue'
 import LoginView from '@/views/LoginView.vue'
 import PaginaGerenteView from '@/views/PaginaGerenteView.vue'
+import AreaPaiView from '@/views/AreaPaiView.vue'
 
 
 const router = createRouter({
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/',
       name: 'login',
       component: LoginView
+    },
+    {
+      path: '/Areapai',
+      name: 'Areapai',
+      component: AreaPaiView
     },
   
     {

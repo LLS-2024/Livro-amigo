@@ -6,6 +6,7 @@
         <div class="link d-flex  flex-wrap flex-column">
           <ul class="link3 d-flex flex-row flex-wrap justify-content-around">
             <li class="a" ><RouterLink to="/cadastro">Cadastro</RouterLink></li>
+            <li class="a"><RouterLink to="/relatorio">Relatorio</RouterLink></li>
             <li class="a"> <RouterLink to="/PagInfantil">Página Infantil</RouterLink></li>
            <li class="a"> <RouterLink to="/paginaaventura">Aventura</RouterLink></li>
            <li class="a"><RouterLink to="/fantasia">Fantasia</RouterLink></li>

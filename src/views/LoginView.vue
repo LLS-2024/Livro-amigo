@@ -14,6 +14,9 @@ function salvar() {
   if(dados.NumCad === '87654321' && dados.Senha === '654321'){
     router.push('/paginagerenciamento')
   }
+  else if(dados.NumCad === '66666666' && dados.Senha === '111111'){
+    router.push('/Areapai')
+  }
 
   else if (!dados.NumCad || dados.NumCad.length < 8) {
     return alert('Número de cadastro inválido. Deve conter pelo menos 8 caracteres.');
