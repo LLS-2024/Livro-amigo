@@ -7,18 +7,17 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
    <main class="main d-flex flex-column flex-wrap ">
 
       <div class="d-flex flex-column flex-wrap justify-content-around">
-<h3>Coleções</h3>
 <div class="d-flex flex-wrap flex-row">
     <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
-<RouterLink class="img3" to="/"><img src="../assets/box.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/jardim.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/fadas.webp" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/mrqui.webp" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/cacada.jpg" alt=""></RouterLink>
 </div>
     <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
     <div class=" d-flex flex-row flex-wrap bg-secondary">
-<RouterLink class="img3" to="/"><img src="../assets/box.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/jardim.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/sombrio.jpeg" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/mansao.jpg" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/final.jpg" alt=""></RouterLink>
 </div>
 </div>
 </div>
@@ -26,34 +25,25 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 
 <div class="caixa d-flex flex-row flex-wrap bg-secondary">
 <div>
+<RouterLink class="img3" to="/"><img src="../assets/janela.jpeg" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/neve.avif" alt=""></RouterLink>
+<RouterLink class="img3" to="/"><img src="../assets/bird.jpeg" alt=""></RouterLink>
+</div>
+</div>
+<div class="d-flex flex-column flex-wrap justify-content-around">
+<div class="d-flex flex-wrap flex-row">
+    <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
+</div>
+    <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+    <div class=" d-flex flex-row flex-wrap bg-secondary">
 <RouterLink class="img3" to="/"><img src="../assets/box.png" alt=""></RouterLink>
 <RouterLink class="img3" to="/"><img src="../assets/jardim.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/jardim.png" alt=""></RouterLink>
 </div>
 </div>
-
-    <div class="caixa3 d-flex flex-row flex-wrap bg-secondary justify-content-around">
-    <div class="caixa2 d-flex flex-row flex-wrap">
-<RouterLink class="img3" to="/"><img src="../assets/box.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/jardim.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
-</div>
-<div class="img">
-    <img src="/src/assets/jardim.png" alt="">
 </div>
 </div>
-<div class="caixa4 d-flex flex-row flex-wrap">
-<div class="caixa4 d-flex flex-row flex-wrap bg-secondary">
-<RouterLink class="img3" to="/"><img src="../assets/box.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/jardim.png" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/oito.png" alt=""></RouterLink>
-</div>
-<div class="img2">
-    <img src="/src/assets/jardim.png" alt="">
-</div>
-</div>    
+  
    </main>
 </template>
 <style scoped>
