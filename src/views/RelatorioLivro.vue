@@ -5,7 +5,6 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 
 <template>
   <HeaderCompo title="Relatório dos livros"/>
-
   <main>
     <div class="relatorio">
       <h2 class="one">Relatório de livros</h2>
@@ -38,6 +37,7 @@ import HeaderCompo from '@/components/HeaderCompo.vue';
 </template>
 
 <style scoped>
+
 /* Estilos para o layout e o formulário */
 .perfil {
   display: flex;
@@ -116,6 +116,18 @@ nav {
 .tabela-livros th {
   background-color: #ddd;
 }
+nav{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Titan One', sans-serif;
+}
+.container1{
+            display: flex;  
+  flex-direction: column;
+  align-items: center;
+        }
 
 .usuario {
   font-size: 18px;
