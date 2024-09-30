@@ -56,13 +56,15 @@ const selectBook = (book) => {
 <template>
   <HeaderCompo title="Aventura"/>
    <main class="main d-flex flex-column flex-wrap ">
+<lista-livros/>
+
 <div class="caixa d-flex flex-row flex-wrap bg-secondary">
 <div>
-<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-4.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-5.jfif" alt=""></RouterLink>
+
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-4.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-5.jfif" alt=""></RouterLink>
 </div>
 </div>
 <div class="d-flex flex-column flex-wrap justify-content-around">
@@ -70,18 +72,18 @@ const selectBook = (book) => {
 <h3>Coleções</h3>
 <div class="d-flex flex-wrap flex-row">
     <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
 </div>
 
 
 
     <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
     <div class=" d-flex flex-row flex-wrap bg-secondary">
-<RouterLink class="img3" to="/"><img src="/src/assets/aventura1 - Copia.jpg" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="/src/assets/aventura-2 - Copia.jpg" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="/src/assets/aventura-3 - Copia.jpg" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="/src/assets/aventura1 - Copia.jpg" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="/src/assets/aventura-2 - Copia.jpg" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo/"><img src="/src/assets/aventura-3 - Copia.jpg" alt=""></RouterLink>
 </div>
 </div>
 </div>
@@ -89,9 +91,9 @@ const selectBook = (book) => {
 
     <div class="caixa3 d-flex flex-row flex-wrap bg-secondary justify-content-around">
     <div class="caixa2 d-flex flex-row flex-wrap">
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
 </div>
 <div class="img">
     <img src="/src/assets/imagem-avt.png" alt="">
@@ -99,9 +101,9 @@ const selectBook = (book) => {
 </div>
 <div class="caixa4 d-flex flex-row flex-wrap">
 <div class="caixa4 d-flex flex-row flex-wrap bg-secondary">
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
-<RouterLink class="img3" to="/"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-1.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-2.jfif" alt=""></RouterLink>
+<RouterLink class="img3" to="/LivroResumo"><img src="../assets/img-aventura-3.jfif" alt=""></RouterLink>
 </div>
 <div class="img2">
     <img src="/src/assets/imagem-avt.png" alt="">
