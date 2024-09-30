@@ -1,98 +1,249 @@
 <script setup>
-import HeaderCompo from '@/components/HeaderCompo.vue';
+import { ref } from 'vue'
+import HeaderCompo from '@/components/HeaderCompo.vue'
+const books = ref([
+  { name: 'cores', img: new URL('../assets/l1.jpg', import.meta.url).href, description: 'é um livro infantil de André Neves sobre um porquinho de brinquedo chamado Lino que vive em uma loja de brinquedos. Sua melhor amiga, Lua, é uma coelhinha que acende uma luz na barriga quando gargalha. Quando Lua é comprada, Lino fica sozinho e a história aborda sua busca por novos amigos e consolo.'
+  },
+  {
+    name: 'sonolenta',
+    img: new URL('../assets/l2.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 2'
+  },
+  {
+    name: 'curativo',
+    img: new URL('../assets/l3.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 3'
+  },
+  {
+    name: 'manu',
+    img: new URL('../assets/l4.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 4'
+  },
+  {
+    name: 'lino',
+    img: new URL('../assets/l5.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 5'
+  },
+  {
+    name: 'sementinha',
+    img: new URL('../assets/l6.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 6'
+  },
+  {
+    name: 'bolo chocolate',
+    img: new URL('../assets/l9.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 7'
+  },
+  {
+    name: 'malvina',
+    img: new URL('../assets/l7.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 8'
+  },
+  {
+    name: 'marcelo',
+    img: new URL('../assets/l11.jpg', import.meta.url).href,
+    description: 'Descrição do Livro 9'
+  },
+])
 
+const selectedBook = ref(null)
+
+const selectBook = (book) => {
+  selectedBook.value = book
+}
 </script>
+
+
+
 <template>
-  <HeaderCompo title="Página Infantil"/>
- <div class="conteiner2">
-    
-    <div> <img src="../assets/i3.jpg" class="img3">
-    <img src="../assets/i4.jpg" class="img2"> </div>
- </div>
- <div class="conteiner3">
-    <div> 
-    <img src="../assets/i2.jpg" class="img1">
-    <img src="../assets/i1.jpg" class="img1">
-    <img src="../assets/i5.jpg" class="img1">
-    <img src="../assets/i6.jpg" class="img1">
-    <img src="../assets/i7.jpg" class="img1">
-    <img src="../assets/i8.jpg" class="img1">
-    <img src="../assets/i9.jpg" class="img1">
-
-</div>
- </div>
- <div class="conteiner4">
-    <div> 
-    <img src="../assets/i10.jpg" >
-    <img src="../assets/i11.jpg" class="img4" >
+  <HeaderCompo title="infantil" />
+  <main class="main d-flex flex-column flex-wrap">
+    <div class="d-flex flex-column flex-wrap justify-content-around">
+      <h3>Coleções</h3>
+      <div class="d-flex flex-wrap flex-row">
+        <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+          <RouterLink class="img1" to="/"><img src="../assets/l1.jpg" alt="" /></RouterLink>
+          <RouterLink class="img1" to="/"><img src="../assets/l2.jpg" alt="" /></RouterLink>
+          <RouterLink class="img1" to="/"><img src="../assets/l3.jpg" /></RouterLink>
+        </div>
+        <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+          <div class="d-flex flex-row flex-wrap bg-secondary">
+            <img src="/src/assets/image 55.png" id="img5" />
+          </div>
+        </div>
 
 
-</div>
-
-</div> 
 
 
+
+
+
+        <main class="main d-flex flex-column align-items-center">
+    <div class="books-container d-flex flex-wrap justify-content-center">
+      <div v-for="book in books" :key="book.name" class="book-card" @click="selectBook(book)">
+        <img :src="book.img" :alt="book.name" />
+        <p>{{ book.name }}</p>
+      </div>
+    </div>
+    <div v-if="selectedBook" class="descricao-livro">
+      <h5>{{ selectedBook.name }}</h5>
+      <p>{{ selectedBook.description }}</p>
+    </div>
+  </main>
+        <div class="caixa d-flex flex-row flex-wrap bg-secondary">
+          <div class="d-flex flex-row flex-wrap bg-secondary">
+            <img src="/src/assets/l4.jpg" />
+          </div>
+        </div>
+        <div class="caixa d-flex flex-row flex-wrap bg-secondary">
+          <div class="d-flex flex-row flex-wrap bg-secondary">
+            <img src="/src/assets/l5.jpg" />
+          </div>
+        </div>
+        <div class="caixa d-flex flex-row flex-wrap bg-secondary">
+          <div class="d-flex flex-row flex-wrap bg-secondary">
+            <img src="/src/assets/l6.jpg" />
+          </div>
+        </div>
+        <div class="caixa d-flex flex-row flex-wrap bg-secondary">
+          <div class="d-flex flex-row flex-wrap bg-secondary">
+            <img src="/src/assets/l7.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <div class="d-flex flex-wrap flex-row">
+        <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+          <RouterLink class="img1" to="/"><img src="../assets/l8.jpg" alt="" /></RouterLink>
+          <RouterLink class="img1" to="/"><img src="../assets/l9.jpg" alt="" /></RouterLink>
+          <RouterLink class="img1" to="/"><img src="../assets/l10.jpg" /></RouterLink>
+        </div>
+        <div class="caixa2 d-flex flex-row flex-wrap bg-secondary">
+          <div class="d-flex flex-row flex-wrap bg-secondary">
+            <img src="/src/assets/l11.jpg" id="img5" />
+          </div>
+        </div>
+    </div>
+  </main>
 </template>
-<style scoped>
- @charset "utf-8";
- @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+ 
+ <style scoped>
+li {
+  padding: 20px;
+}
+.main {
+  align-items: end;
+}
+.caixa {
+  margin: 19px;
+  padding: 30px;
+}
+.caixa2 {
+  margin: 30px;
+  padding: 20px 50px;
+  align-items: center;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  margin: 22px;
+}
+img {
+  width: 205px;
+  height: 170px;
+  margin: 10px;
+}
+#img5{
+  width: 275px;
+  height: 300px;
+  margin: 10px;
+}
+.img1 {
+  width: 150px;
+  height: 200px;
+  margin: 40px;
+}
+.caixa3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.caixa4 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 30px 70px;
+}
+.img2 {
+  margin: 0px 10px 0px 200px;
+}
+.img5 img {
+  width: 200px;
 
- .container1{
-            display: flex;  
+  height: 300px;
+}
+.main {
+  padding: 20px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.book-card {
+  display: flex;
   flex-direction: column;
   align-items: center;
- 
-        }
-        .container2{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: rgb(87, 86, 86);
-        padding: 50px;
-        }
-        .container3{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        
-        }
-        .container4{
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
-        
-        }
-
-img{
-    margin: 90px;
-    width: 400px;
-    height: 300px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-.img1{
-    width: 160px;
-    height: 180px;
-    margin: 12px;
-    border: solid 1px black;
+.book-card:hover {
+  transform: scale(1.05);
 }
-.img2{
-    width: 400px;
-    height: 400px;
- 
-
+.book-card img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
 }
-.img4{
-    width: 500px;
-    height: 300px;
-    border: solid 3px black;
-
+.book-card p {
+  margin-top: 10px;
+  text-align: center;
 }
-h3{
- color: aliceblue; 
+.descricao-livro {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 80%;
+  text-align: center;
 }
-nav{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    font-family: 'Titan One', sans-serif;
-}
-
-
 </style>
