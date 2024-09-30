@@ -4,8 +4,8 @@ import PaginaInicialView from '@/views/PaginaInicialView.vue'
 import PaginaAventura from '@/views/PaginaAventura.vue'
 import CadLivrosView from '@/views/CadLivrosView.vue'
 import LoginView from '@/views/LoginView.vue'
-import LogingerenteView from '@/views/LogingerenteView.vue'
 import PaginaGerenteView from '@/views/PaginaGerenteView.vue'
+import AreaPaiView from '@/views/AreaPaiView.vue'
 
 
 const router = createRouter({
@@ -17,10 +17,11 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/logingerente',
-      name: 'logingerente',
-      component: LogingerenteView
+      path: '/Areapai',
+      name: 'Areapai',
+      component: AreaPaiView
     },
+  
     {
       path: '/cadastro',
       name: 'cadastro',
