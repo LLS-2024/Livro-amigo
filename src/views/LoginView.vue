@@ -64,7 +64,6 @@ function salvar() {
         </form>
         <div class="d-flex flex-row justify-content-between">
           <div class="cadd"><RouterLink class="cadastro" to="/cadastro">Cadastre-se</RouterLink> aqui</div>
-          <div><RouterLink class="cadastro" to="/logingerente">Sou gerenciador</RouterLink></div>
         </div>
       </div>
     </div>
